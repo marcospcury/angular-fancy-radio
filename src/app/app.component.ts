@@ -8,10 +8,10 @@ import { RadioButtonItem } from './radio-button/radio-button.component';
 })
 export class AppComponent {
   items: RadioButtonItem[] = [
-    { name: 'radio1', value: 'radio1' },
-    { name: 'radio2', value: 'radio2' }
+    { name: 'CPF', value: 'CPF' },
+    { name: 'Protocolo (CIP)', value: 'CIP' }
   ];
 
-  selectedItem: any = 'radio2';
+  selectedItem: any = 'CPF';
 
 }

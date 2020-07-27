@@ -1,14 +1,17 @@
-value: {{ value }}
-
-<ng-container *ngFor="let item of items">
-	<label class="container">
-  {{label}}
-  <input 
-  type="radio" 
-  [value]="item.value"
-  [ngModel]="value"
-  (ngModelChange)="change($event)"
-  name="radio2" />{{item.name}}
-  <span class="checkmark" (click)="onChange(checked)"></span>
-</label>
-</ng-container>
+<div class="group-container">
+  <ng-container *ngFor="let item of items">
+    <div class="item-container">
+    <input 
+      type="radio" 
+      [value]="item.value"
+      [ngModel]="value"
+      (ngModelChange)="change($event)"
+      name="radio2" />
+    <span class="checkmark" (click)="onChange(checked)">
+      <span>
+        {{item.name}}
+      </span>
+    </span>
+  </div>
+  </ng-container>
+</div>
